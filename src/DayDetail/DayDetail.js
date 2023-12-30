@@ -14,7 +14,7 @@ const DayDetail = () => {
     try {
    
       let data = await fetch(
-        "http://api.weatherapi.com/v1/forecast.json?key=cedfb890691c458a834171442230709&q=Lucknow&days=10&aqi=no&alerts=no"
+        "https://api.weatherapi.com/v1/forecast.json?key=cedfb890691c458a834171442230709&q=Lucknow&days=10&aqi=no&alerts=no"
       );
       let result = await data.json();
       const detailHour = result.forecast.forecastday[newIndex];
