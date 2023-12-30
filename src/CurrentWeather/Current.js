@@ -21,7 +21,7 @@ const Current = ({ search }) => {
     try {
       setLoading(true);
       let detail = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=cedfb890691c458a834171442230709&q=${search}&days=10`
+        `https://api.weatherapi.com/v1/forecast.json?key=cedfb890691c458a834171442230709&q=${search}&days=10`
       );
       let data = await detail.json();
       setForcastDetail({
