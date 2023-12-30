@@ -1,0 +1,34 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 210px;
+}
+
+.card:hover{
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.1);
+    transition: ease-out 0.8s;
+}
+
+.card img{
+    width: 80px;
+}
+
+.img_cont{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.card p{
+    color: #fff;
+    font-size: 15px;
+}
